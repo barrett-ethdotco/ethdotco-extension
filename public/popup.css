@@ -1,0 +1,205 @@
+  /* ethcoextnpopover styling */
+  /* normalize css starts here */
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* normalize css ends here */
+  
+
+  .eth-co-ext-body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  
+  .main {
+    padding: 16px;
+    margin-bottom: 30px;
+  }
+
+  .fav-icon {
+    width: 20px;
+    float: right;
+    cursor: pointer;
+  }
+
+  .view-icon {
+    width: 20px;
+    float: right;
+    margin:0 20px;
+    cursor: pointer;
+    
+  }
+
+.eth-co-ext-full-height{
+height: 100%;
+}
+
+.eth-co-ext-ninty-height{
+height: 90%;
+overflow: scroll;
+}
+#eth-co-search-input {
+
+background-image: url('icons/search.svg');
+background-position: 10px 12px;
+background-repeat: no-repeat;
+width: 100%;
+font-size: 16px;
+padding: 12px 20px 12px 40px;
+border: 1px solid #ddd;
+margin-bottom: 12px;
+}
+
+.eth-co-ext-clear-btn{
+cursor: pointer;
+position: absolute;
+bottom: 10px;
+right: 10px;
+font-size: 12px;
+}
+
+
+#eth-co-ext-search-list{
+position: absolute;
+right:18px;
+top:65px;
+width:380px;
+z-index: 400;
+max-height: 420px;
+overflow: scroll;
+}
+ 
+  
+ 
+    .eth-co-ext-icon{
+      width: 25px;
+      height: 25px;
+      margin: 0 10px;
+      vertical-align: middle;
+    }
+    
+    .eth-co-ext-popover-title {
+      text-decoration: none;
+      text-align: center;
+      float: left;
+      clear: none;
+    }
+    
+    .eth-co-ext-popover-wrapper {
+      position: relative;
+      display: inline-block;
+    }
+    .ethcoextnpopover__content {
+       opacity: 0; 
+       /* visibility: hidden; 
+      position: absolute; */
+      transform: translate(0, 10px);
+      background-color: #bfbfbf;
+      padding: 1.5rem;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+      width: 600px;
+      height:250px;
+      z-index: 250;
+    }
+    
+    .eth-co-ext-popover-wrapper:hover {
+      z-index: 250;
+      opacity: 1;
+      visibility: visible;
+  
+    }
+
+    #eth-co-ext-close-btn{
+      width: 50px;
+      height: 50px;
+    }
+   
+    
+    .eht-co-popover-main{
+      z-index: 1900;
+      position: relative;
+      overflow: visible;
+
+    }
+
+    .eht-co-popover-full-screen{
+      position: fixed;
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden;
+      background-color: rgba(0,0,0,0.5);
+    }
+
+    .eht-co-popover-container{
+      display: flex;
+      flex-flow: column;
+      position: absolute;
+      z-index: 42069;
+      width: 30%;
+      right: 0;
+      height: 100%;
+      background-color: #bfbfbf;
+    }
+
+    #eth-co-popover{
+      height: 100%;
+    }
+
+    .eht-co-stop-scrolling {
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .eth-co-ext-header-container{
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+      gap: 25px;
+    }
+
+    .eth-co-ext-header-title{
+      font-weight: bold;
+    }
+
+   
+
+    #eht-co-hover-popover{
+      width:400px;
+      height: 150px;
+    }
+
+    .eht-co-ext-popup{
+      position: fixed;
+      height: 150px;
+      width: 400px;
+      z-index: 999;
+      cursor: pointer;
+    }
+
+    .eht-co-ext-popup-clickarea{
+      position: absolute;
+      height: 200px;
+      width: 500px;
+      top: 0;
+      left: 0;
+      z-index: 999;
+      cursor: pointer;
+    }
+ 
+ .eht-co-ext-avatar {
+    vertical-align: middle;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+  }
+  
+  .icon{
+      width: 25px;
+      height: 25px;
+      margin:5px 15px;
+  }

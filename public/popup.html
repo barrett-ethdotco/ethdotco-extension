@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>.eth.co</title>
+    <link rel="stylesheet" href="popup.css" />
+    <!doctype html>
+</body>
+</html>
+  <head>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+   </head>
+  <body class="eth-co-ext-body" style="width:450px;height:450px;">
+
+<div class="main eth-co-ext-full-height">
+  <div class="eth-co-ext-header-container">
+  <h1 class="eth-co-ext-header-title mr-15">
+   .eth.co
+  </h1>
+  <div style=" flex-grow: 1;">
+  <input type="text" id="eth-co-search-input"  placeholder="Search any .eth name" title="Search any .eth name">
+  <button type="button" id="clear-search-btn" class="btn-close" style="position: absolute; top:30px; right:25px;" aria-label="Close"></button>
+  </div>
+    <ul id="eth-co-ext-search-list" class="list-group" hidden="true">
+        </ul>
+    </div>
+    
+
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <li class="nav-item m-1" role="presentation">
+        <button class="btn btn-outline-dark rounded-pill active" id="pills-recent-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Recents</button>
+      </li>
+      <li class="nav-item m-1" role="presentation">
+        <button class="btn btn-outline-dark rounded-pill" id="pills-favorites-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Favorited</button>
+      </li>
+      <li class="nav-item m-1" role="presentation">
+        <button class="btn btn-outline-dark rounded-pill" id="pills-seardch-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Searched</button>
+      </li>
+    </ul>
+    <hr />
+    <div class="tab-content eth-co-ext-full-height" id="pills-tabContent">
+      <div class="tab-pane fade show active eth-co-ext-full-height   " style="overflow: scroll;" id="pills-recent" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+        <ul id="recent-list" class="eth-co-ext-ninty-height list-group">
+
+          </ul>
+          <button id="recent-eth-co-ext-clear-btn" class="eth-co-ext-clear-btn btn btn-outline-dark rounded-pill btn-sm">clear recents</button>
+      </div>
+      <div class="tab-pane fade eth-co-ext-full-height " id="pills-favorites" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+        <ul id="favorites-list" class="eth-co-ext-ninty-height list-group">
+
+        </ul>
+        <button id="favorite-eth-co-ext-clear-btn" class="eth-co-ext-clear-btn btn btn-outline-dark rounded-pill btn-sm">clear favorites</button>
+      </div>
+      <div class="tab-pane fade eth-co-ext-full-height" id="pills-search" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+        <ul id="search-list" class="eth-co-ext-ninty-height list-group">
+
+        </ul>
+        <button id="search-eth-co-ext-clear-btn" class="eth-co-ext-clear-btn btn btn-outline-dark rounded-pill btn-sm">clear searches</button>
+      </div>
+    </div>
+    <div>
+      
+    </div>
+    <div>
+      
+    </div>
+    <div>
+      
+    </div>
+  </div>
+</div>
+<script src="/src/appinfo.js"></script>
+<script src="/src/storage.js"></script>
+  <script src="/src/popup.js"></script>
+  </body>
+</html>
